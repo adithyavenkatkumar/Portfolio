@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  }
+
+  /* Nordic Matcha Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f7f9f5;
+  }
+
+  .dark ::-webkit-scrollbar-track {
+    background: #101714;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #a3c4a6;
+    border-radius: 5px;
+    border: 2px solid #f7f9f5;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: #354f52;
+    border: 2px solid #101714;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #52796f;
+  }
+}
+
+/* Glassmorphism Nordic Matcha Utilities */
+.glass-matcha {
+  background: rgba(247, 249, 245, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(132, 169, 140, 0.25);
+}
+
+.dark .glass-matcha {
+  background: rgba(24, 34, 30, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(132, 169, 140, 0.15);
+}
+
+.matcha-gradient-text {
+  @apply bg-gradient-to-r from-matcha-600 via-matcha-500 to-matcha-400 dark:from-matcha-300 dark:via-matcha-400 dark:to-matcha-200 bg-clip-text text-transparent;
+}
