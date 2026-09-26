@@ -27,7 +27,7 @@ const Projects = ({ onSelectProject }) => {
             <span>SELECTED WORK</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-nordic-charcoal dark:text-white tracking-tight">
-            Featured Projects
+            Projects
           </h2>
           <p className="mt-3 text-matcha-700/80 dark:text-matcha-200/80 text-base sm:text-lg">
             Click any project card to view architectural details, challenges solved, and live links.
