@@ -2,8 +2,6 @@
 
 A modern, responsive, and high-performance Cloud Engineer & Frontend Developer portfolio built with **React 18**, **Vite**, **TailwindCSS 3**, and **Framer Motion**.
 
-![Portfolio Preview](https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop)
-
 ---
 
 ## ✨ Key Features
@@ -122,10 +120,4 @@ Edit [`src/data/portfolioData.js`](file:///home/avk/Documents/Portfolio/src/data
 
 ---
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE) - feel free to customize and use it for your own portfolio!
-
----
-
-*Made with ☁️ by [Adithya Venkat Kumar](https://github.com/adithyavenkatkumar)*
+*Made ☁️ by [Adithya Venkat Kumar](https://github.com/adithyavenkatkumar)*
