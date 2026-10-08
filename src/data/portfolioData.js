@@ -124,6 +124,52 @@ export const projectsData = {
   categories: ["All", "Cloud & DevOps", "Machine Learning & AI"],
   projects: [
     {
+      id: "module-forge-multi-cloud-terraform",
+      title: "Module_Forge – Multi-Cloud Terraform Infrastructure Framework",
+      category: "Cloud & DevOps",
+      tagline: "Modular, production-grade IaC framework for Microsoft Azure & AWS with zero-secret CI/CD.",
+      description: "Designed and built a modular, production-grade Infrastructure as Code (IaC) framework for Microsoft Azure and Amazon Web Services (AWS), providing 36 reusable child modules, multi-environment deployments, and automated CI/CD workflows.",
+      image: "/module-forge.png",
+      techStack: [
+        "Terraform",
+        "Microsoft Azure",
+        "AWS",
+        "Infrastructure as Code",
+        "Azure Key Vault",
+        "AWS KMS",
+        "Multi-Cloud",
+        "CI/CD",
+        "Azure CLI",
+        "AWS CLI"
+      ],
+      githubUrl: "https://github.com/adithyavenkatkumar/Module_Forge",
+      liveUrl: "https://github.com/adithyavenkatkumar/Module_Forge",
+      featured: true,
+      metrics: "36 Reusable Modules • 5 Environments (Dev, Test, Staging, Prod, DR) • Zero-Secret OIDC CI/CD",
+      architectureDiagram: [
+        { step: "IaC Framework", node: "36 Terraform Modules", detail: "Reusable child modules for Azure & AWS compute, networking, and security" },
+        { step: "Multi-Environment", node: "Dev / Test / Staging / Prod / DR", detail: "Structured multi-environment configurations across 5 isolated deployments" },
+        { step: "Secrets Mgmt", node: "Azure Key Vault & AWS KMS", detail: "Centralized credential management eliminating hardcoded secrets" },
+        { step: "CI/CD Pipeline", node: "GitHub Actions + OIDC", detail: "Zero-secret CI/CD automation for terraform init, validate, plan, apply, and destroy" }
+      ],
+      details: {
+        problem: "Managing cloud infrastructure manually or with monolithic scripts across Azure and AWS causes configuration drift, security risks with hardcoded secrets, and inconsistent environment deployments.",
+        solution: "Engineered Module_Forge: a modular, enterprise-grade Infrastructure as Code framework containing 36 reusable child modules across Azure and AWS, structured multi-environment deployments (Dev, Test, Staging, Prod, DR), and passwordless OIDC GitHub Actions CI/CD pipelines.",
+        architecture: [
+          "36 Reusable Child Modules: Modular, parameter-driven Terraform HCL modules for Azure & AWS compute, networking, storage, and security.",
+          "Multi-Environment Strategy: Strict environmental separation across Dev, Test, Staging, Prod, and Disaster Recovery (DR) workspaces.",
+          "Centralized Credential Security: Integrated Azure Key Vault and AWS KMS to eliminate hardcoded secrets and enforce encryption at rest.",
+          "Zero-Secret CI/CD Workflows: Built GitHub Actions automation with OpenID Connect (OIDC) authentication for passwordless deployment.",
+          "Enterprise Landing Zones: Provisioned production-ready landing zone architectures covering VNets/VPCs, Subnets, IAM/RBAC, and NSGs/Security Groups.",
+          "Full Lifecycle Workflows: Standardized and documented complete Terraform lifecycle commands (init, validate, plan, apply, destroy) across standalone root modules."
+        ],
+        keyChallenges: [
+          "Harmonizing parameter interfaces and state outputs between Microsoft Azure and Amazon Web Services modules.",
+          "Configuring secure OIDC federated authentication in GitHub Actions to eliminate long-lived cloud credentials."
+        ]
+      }
+    },
+    {
       id: "azure-windows-linux-vm-terraform",
       title: "Azure Multi-OS VM Infrastructure with Terraform",
       category: "Cloud & DevOps",
